@@ -28,7 +28,8 @@ public class Aula09Objetos {
 
         System.out.pryntln(carro == carro2);
 
-        Syste
+        System.out.println(carro instanceof Carro);
+        System.out.println(carro instanceof Object);
 
 
 
