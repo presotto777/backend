@@ -19,9 +19,30 @@ public class Pessoa {
 
     public void exibirDados() {
         System.out.println("--- Dados da pessoa ---");
-       System.out.println("Nome: " + pessoa1.nome);
-       System.out.println("Idade: " + pessoa1.idade);
-       System.out.println("Altura (m): " + pessoa1.altura);
+       System.out.println("Nome: " + nome);
+       System.out.println("Idade: " + idade);
+       System.out.println("Altura (m): " + altura);
     }
+
+    /**
+     * Nomenclatura de metodos
+     * 
+     * Métodos/Funções indicam ações, e por padrão utilizamos verbos.
+     * 
+     * Ex.: correr, andar, caminhar ...
+     */
+
+    public void atribuirSalario(double valor) {
+        this.salario = valor;
+
+        System.out.println("O novo salario de " + this.nome + " é: " + this.salario);
+    }
+
+    public void atribuirSalario(double valor, double bonus) {
+        this.salario = valor + bonus;
+
+        System.out.println("O novo salário de " + this.nome + " é: " + this.salario + " mais um bônus de " + bonus);
+    }
+
 
 }
