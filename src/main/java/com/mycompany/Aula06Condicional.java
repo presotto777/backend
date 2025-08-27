@@ -40,50 +40,52 @@ public class Aula06Condicional {
             System.out.println("Está com obesidade");
         }
 
-       /*
-       * Estrutura Switch/Case
-       *
-       * É similar ao if/else, com a diferença que ele considera valores predefinidos
-       * que serão observados em cada case (Caso).
-       *
-       * Na sua estrutura ele analisa uma variável, e considera dentre suas opções qual
-       * considera.
-       *
-       * Cada estrutura case deve conter um break, para encerrar a execução.
-       *
-       * O default (padrão) é executado, caso nenhum case tenha sido executado.
-       *
-       * Um exemplo seria uma pergunta de múltipla escolha.
-       */
+        /*
+         * Estrutura Switch/Case
+         *
+         * É similar ao if/else, com a diferença que ele considera valores predefinidos
+         * que serão observados em cada case (Caso).
+         *
+         * Na sua estrutura ele analisa uma variável, e considera dentre suas opções
+         * qual
+         * considera.
+         *
+         * Cada estrutura case deve conter um break, para encerrar a execução.
+         *
+         * O default (padrão) é executado, caso nenhum case tenha sido executado.
+         *
+         * Um exemplo seria uma pergunta de múltipla escolha.
+         */
 
-      // Digitando textos em mais de uma linha
+        // Digitando textos em mais de uma linha
         System.out.println(
 
-        "1) Verde, Amarelo e Azul, são cores que fazem parte da bandeira de qual país?\n" +
-               "\\na) Argentina" + // \n é um caracter de escape usado para pular linha.
-               "\\nb) Paraguai" +
-               "\\nc) Brasil" +
-               "\\nd) Alemanha" +
-               "\\n\\nDigite uma opção: ");
+                "1) Verde, Amarelo e Azul, são cores que fazem parte da bandeira de qual país?\n" +
+                        "\\na) Argentina" + // \n é um caracter de escape usado para pular linha.
+                        "\\nb) Paraguai" +
+                        "\\nc) Brasil" +
+                        "\\nd) Alemanha" +
+                        "\\n\\nDigite uma opção: ");
 
-      scanner scan = new Scanner(System.in);
-      String opcao = scan.nextLine();
+        Scanner scan = new Scanner(System.in);
+        String opcao = scan.nextLine();
 
-      switch (opcao) {
-          case "a":
-             System.out.println("Resposta incorreta !!");
-        break;
-          case "b":
-             System.out.println("Resposta incorreta !!");
-        break;
-          case "c":
-             System.out.println("Resposta correta !!");
-        break;
-          case "d":
-             System.out.println("Resposta incorreta !!");
-        break;
-    default:
-             System.out.println("Opção inexistente !!");
-        break;
-}
+        switch (opcao) {
+            case "a":
+                System.out.println("Resposta incorreta !!");
+                break;
+            case "b":
+                System.out.println("Resposta incorreta !!");
+                break;
+            case "c":
+                System.out.println("Resposta correta !!");
+                break;
+            case "d":
+                System.out.println("Resposta incorreta !!");
+                break;
+            default:
+                System.out.println("Opção inexistente !!");
+                break;
+        }
+    }
 }

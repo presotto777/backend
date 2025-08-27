@@ -1,6 +1,5 @@
 package com.mycompany;
 
-package com.mycompany;
 
 public class av2 {
 
