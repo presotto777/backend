@@ -19,7 +19,7 @@ public class Pessoa {
     // Declaramos sempre após a declaração dos atributos
 
     // Método acessor, sempre começa com get
-    public String getNome() {
+    public String getNome() {idade
     return nome;
     }
 
@@ -32,7 +32,7 @@ public class Pessoa {
         return idade;
     }
 
-    public void setIdade(int idade) {
+    public void setIdade(int ) {
         this.idade = idade;
     }
 
